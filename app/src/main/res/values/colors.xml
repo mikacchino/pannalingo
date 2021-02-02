@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="coffee">#381717</color>
+    <color name="chocolate">#763530</color>
+    <color name="cream">#FFB877</color>
+
 </resources>
