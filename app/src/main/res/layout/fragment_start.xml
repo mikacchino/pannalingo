@@ -1,15 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartFragment"
-    android:background="@color/chocolate">
+    android:background="@drawable/gradient_bg"
+    tools:context=".StartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/app_title"
+        android:textAlignment="center"
+        android:textColor="@color/coffee"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="68dp"
+        android:width="275sp"
+        android:background="@drawable/rounded_corner_filled"
+        android:fontFamily="@font/quicksand_medium"
+        android:paddingTop="7dp"
+        android:paddingBottom="15dp"
+        android:text="@string/play_btn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#904E3E"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan" />
+
+    <Button
+        android:id="@+id/words_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:width="275sp"
+        android:background="@drawable/rounded_corner_unfilled"
+        android:fontFamily="@font/quicksand_medium"
+        android:paddingTop="7dp"
+        android:paddingBottom="15dp"
+        android:text="@string/words_btn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/coffee"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_btn" />
+
+    <Spinner
+        android:id="@+id/freq_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="65sp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/spinner_bg"
+        android:minWidth="275sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="15dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/words_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
