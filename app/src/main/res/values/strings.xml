@@ -6,6 +6,7 @@
     <string name="slogan">Sweeten your learning!</string>
     <string name="play_btn">Play!</string>
     <string name="words_btn">View words</string>
+    <string name="words_title">Saved words</string>
     <string-array name="planets_array">
         <item>Mercury</item>
         <item>Venus</item>
