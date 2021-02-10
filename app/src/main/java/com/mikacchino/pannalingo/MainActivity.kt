@@ -1,9 +1,8 @@
 package com.mikacchino.pannalingo
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -11,8 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // insert fragment into activity
-        replaceFragment(StartFragment(), R.id.fragment_frame)
+        // insert start fragment into activity
+        addFragment(StartFragment(), R.id.fragment_frame)
     }
 }
-

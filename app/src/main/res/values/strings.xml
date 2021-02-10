@@ -3,11 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_title">Pannalingo</string>
-    <string name="slogan">Sweeten your learning!</string>
+    <string name="slogan">Sweeten your study!</string>
     <string name="play_btn">Play!</string>
     <string name="words_btn">View words</string>
     <string name="words_title">Saved words</string>
-    <string-array name="planets_array">
+    <string name="add_words_btn">Add words</string>
+    <string-array name="frequency_array">
         <item>Mercury</item>
         <item>Venus</item>
         <item>Earth</item>

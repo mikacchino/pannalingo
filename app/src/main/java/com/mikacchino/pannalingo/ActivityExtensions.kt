@@ -12,5 +12,15 @@ inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> Fragmen
 
 fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
     // Replace the fragment in the frame
-    supportFragmentManager.inTransaction{replace(frameId, fragment)}
+    supportFragmentManager.inTransaction{
+        replace(frameId, fragment)
+        addToBackStack(null)
+    }
+}
+
+fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int) {
+    // Add the fragment to the frame
+    supportFragmentManager.inTransaction{
+        add(frameId, fragment)
+    }
 }
